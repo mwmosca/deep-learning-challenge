@@ -2,7 +2,9 @@
 Module 21 Challenge
 
 ## Python Library Requirements
-- WiP
+- pandas
+- sklearn
+- tensorflow
 
 ## Report
 ### Overview
