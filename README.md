@@ -30,5 +30,19 @@ The target and features for the model extracted from the historical data are lis
 | SPECIAL_CONSIDERATIONS | special considerations for the application                               |
 | ASK_AMT                | amount of funding requested                                              |
 
+### Compiling, Training, and Evaluating the Model
+Initial sequential model structure:
+| Layer    | Neurons | Activation Function |
+| -------- | ------- | ------------------- |
+| Input    |      43 | N/A                 |
+| Hidden 1 |      80 | ReLU                |
+| Hidden 2 |      30 | ReLU                |
+| Output   |       1 | Sigmoid             |
+
+The input layer contains 43 neurons, 1 for each feature in the training data. <br>
+The numbers of neurons in the hidden layers and the number of hidden layers themselves were chosen arbitrarily for the first model iteration. The reLU activation function was selected to allow the model to learn quickly. <br>
+The output layer contains only 1 neuron because the classifier is binary. The sigmoid activation function was chosen for this same reason. <br>
+This initial model was unable to attain the target accuracy of 75% and therefore had to be modified.
+
 ### Summary
 WiP
