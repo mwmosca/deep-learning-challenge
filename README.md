@@ -46,7 +46,7 @@ This initial model was unable to attain the target accuracy of 75% and therefore
 
 The following optimizations were applied to the model:
 1) The NAME column was added to the model features. Inspecting the value counts of the NAME column revealed there were many repeat applicants seeking funding. It was hypothesized that this might provide insights to the model. Applicants that performed well in the past may be predicted to perform well in the future. The same applies to applicants that performed poorly. However, this may introduce ethical concerns to the model: high performing, repeat applicants may be favored over up-and-coming applicants that have not been given an opportunity.
-2) The NAME column, which contains 19,568 unique values, was binned based on frequency. This reduced model bloat while leaving room for categorization among this data. Binning values were selected to get similarly sized bins. Applicants that appeared only 1 time was an exceptionally large bin containing 18,776 records.
+2) The NAME column, which contains 19,568 unique values, was binned based on frequency. This reduced model bloat while leaving room for categorization among this data. Binning values were selected to get 10 similarly sized bins. Applicants that appeared only 1 time was an exceptionally large bin containing 18,776 records.
 3) The number of input nodes was increased to 53 to accommodate the features in the NAME column.
 4) The number of epochs was reduced to 10. The model was observed to reach the target accuracy of 75% within this number of epochs. Additional training would risk overfitting the model.
 
