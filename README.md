@@ -51,4 +51,5 @@ The following optimizations were applied to the model:
 4) The number of epochs was reduced to 10. The model was observed to reach the target accuracy of 75% within this number of epochs. Additional training would risk overfitting the model.
 
 ### Summary
-WiP
+The input data had a train-test split of 75% train to 25% test. When the model was evaluated on the test data, it produced an accuracy of 76% and a loss of 49%, which satisfies the model requirement for 75% accuracy. <br>
+The neural network constructed for this model is fairly simple, consisting of only 2 hidden layers. There may be an opportunity to reduce unnecessary complexity by creating a preceptron model instead. This would require less computational resources and allow for shorter training times.
